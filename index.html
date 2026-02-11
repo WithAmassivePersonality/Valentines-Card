@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentines Invitation</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article>
+  <div class="envelope-container">
+    <div class="card hide" id="valentine-content">
+      <div class="video-background">
+        <video autoplay loop muted playsinline>
+          <source src="resources/heart.webm" type="video/webm">
+        </video>
+      </div>
+
+      <div class="container">
+        <div class="actual-image">
+          <img src="https://tenor.com/view/heart-love-cat-kawii-cute-gif-8446829684698946759.gif"
+               class="gif" id="gif">
+        </div>
+
+        <hr class="divider">
+
+        <p class="question" id="text">will you be my valentine?</p>
+
+        <hr class="divider">
+
+        <div class="yes-no">
+          <button class="yes" id="yes">Yes</button>
+          <button class="no" id="no">No</button>
+        </div>
+      </div>
+    </div>
+        <div class="heart-container hide" id = "heart-content">
+          <div class = "heart">
+          </div>
+          <div class = "heart">
+          </div>
+          <div class = "heart">
+          </div>
+        </div>
+    <div class="message message-1" id="message-1">
+      <h1>Happy Valentine's Day!</h1>
+      <p class ="fym">May gusto sana akong sabihin sayo..</p>
+    </div>
+
+    <div class="message message-2" id="message-2">
+      <h2>"I Heart You"</h2>
+    </div>
+
+    <button class="close-btn" id="close-btn">&#10005; close envelope</button>
+    <button class="heart-btn" id="heart-btn">&#10084; <span class="heart-btn-text"></span></button>
+
+    <div class="envelope-flap">
+      <svg class="inner">
+        <polygon class="inner-polygon" id="inner-polygon" points="5,0 345,0 175,145"></polygon>
+      </svg>
+      <svg class="outer" id="outer">
+        <polygon class="outer-polygon" points="5,150 345,150 175,0"></polygon>
+      </svg>
+    </div>
+
+    <div class="envelope-base"></div>
+  </div>
+</article>
+
+<script src="script.js"></script>
+</body>
+</html>
